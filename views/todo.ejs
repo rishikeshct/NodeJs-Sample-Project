@@ -1,0 +1,24 @@
+<html>
+</head>
+<title>Todo App</title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href = "/assets/style.css" rel = "stylesheet" type = "text/css"/>
+<!-- middeleware in app.js -->
+<script src="/assets/todo-list.js"></script>
+</head>
+
+<body>
+  <div>
+      <form id= "todo-table">
+          <input type ="text" name = "item" placeholder="Add new item" requires />
+          <button type="submit">Add item </button>
+      </form>
+      <ul>
+        <% for(var i=0; i< todos.length;i++){ %>
+        <li><%= todos[i].item %></li>
+        <% } %>
+      </ul>
+  </div>
+</body>
+
+</html>
